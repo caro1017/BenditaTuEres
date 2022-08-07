@@ -1,0 +1,149 @@
+@import "variables" ,"mixins";
+/* Start Menu*/
+
+.menu{
+  display: flex;
+
+}
+  .nav {
+    display: flex;
+    max-width: 100vh;
+    height: 10px;
+    padding: 30px;
+    margin: 10px auto;
+    @media (max-width: 960px){
+      padding: 40px 10px;
+      margin: 0 auto;
+
+    }
+  }
+  
+  .nav-link {
+    color: $gris-oscuro;
+    text-decoration: none;
+  }
+  
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 1rem;
+
+    @media (max-width: 980px){
+      margin-left: 5rem;
+
+    }
+    
+  }
+
+ 
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 0;
+    font-weight: 300;
+    @media (max-width: 960px){
+      font-weight: 200;
+
+    }
+    
+  }
+
+
+  .nav-menu-item a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+    &:hover, &:focus{
+      background-size: 100% 2px;
+    }
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 1px;
+
+    @media (max-width: 960px){
+      padding: 8px 8px;
+
+    }
+    
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    color: $rosa-oscuro;
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: $rosa-oscuro;
+    background: none;
+    border: none;
+    font-size: 17px;
+    padding: 0 200px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 850px){
+      padding: 0 100px;
+    }
+  }
+
+  
+  /* MOBILE */
+  @media (max-width: 850px) {
+    .nav-menu {
+      flex-direction: column;
+      align-items: 20px;
+      margin-left: 12rem;
+      background-color: $blanco;
+      z-index: 10;
+      position:fixed;
+      top: 90px;
+      width: 15rem;
+      opacity: 0.9;
+      height: auto;
+  
+      height: calc(100% - 60px);
+      overflow-Y: auto;
+  
+      left: 100%;
+      transition: left 1s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+      opacity: 100%;
+    }
+
+    .nav-menu-link{
+      font-weight: 500;
+    }
+
+ 
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  
+/* Finish Menu*/

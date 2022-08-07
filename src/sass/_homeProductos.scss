@@ -1,0 +1,158 @@
+@import "variables" ,"mixins";
+/*start Productos*/
+
+.linea2 {  
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 20%;    
+    border-top:2px solid $rosa-oscuro;
+    position: relative;
+    float:left; 
+    @media (max-width: 985px){
+        width: 20%; 
+    }
+
+    @media (max-width: 850px){
+        width: 20%; 
+    }
+
+    
+    @media (max-width: 695px){
+        display: none;
+    }
+
+
+}
+
+.leyenda2 {
+    margin-left: 4%;
+    margin-top: 8.5%;
+    font-size: 30px;
+    color: $rosa-oscuro;
+    font-weight: 300;
+    float:left;
+
+    @media (max-width: 450px){
+        display: none;
+    }
+}
+
+.leyenda2:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+//imagenes
+
+.imagenes{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    @media (max-width: 450px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.snip1461 {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    min-width: 230px;
+    max-width: 315px;
+    width: 200%;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 16px;
+    background-color: $gris-oscuro;
+    @media (max-width: 450px){
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+    
+  }
+  .snip1461 *,
+  .snip1461 *:before,
+  .snip1461 *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+  }
+  .snip1461 img {
+    max-width: 100%;
+    display: inline-block;
+    backface-visibility: hidden;
+    vertical-align: top;
+    
+  }
+  .snip1461 figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+    padding: 5px 10px;
+  }
+  .snip1461 h2 {
+    margin: 0;
+    font-weight: 500;
+    opacity: 0.8;
+    color: $blanco;
+  }
+  .snip1461 h2:before,
+  .snip1461 h2:after {
+    height: 1px;
+    width: 200px;
+    position: absolute;
+    content: '';
+    top: 50%;
+    -webkit-transform: scaleX(0) translateY(-50%);
+    transform: scaleX(0) translateY(-50%);
+    -webkit-transform-origin: 0% 0;
+    -ms-transform-origin: 0% 0;
+    transform-origin: 0% 0;
+    background-color: $rosa-oscuro;
+  }
+  .snip1461 h2:before {
+    right: 100%;
+  }
+  .snip1461 h2:after {
+    left: 100%;
+  }
+  .snip1461 a {
+    position: relative;
+  }
+  .snip1461:hover:after,
+  .snip1461.hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .snip1461:hover img,
+  .snip1461.hover img {
+    zoom: 1;
+    filter: alpha(opacity=40);
+    -webkit-opacity: 0.4;
+    opacity: 0.5;
+  }
+  .snip1461:hover h2,
+  .snip1461.hover h2 {
+    color: $rosa-oscuro;
+  }
+  .snip1461:hover h2:before,
+  .snip1461.hover h2:before,
+  .snip1461:hover h2:after,
+  .snip1461.hover h2:after {
+    -webkit-transform: scaleX(1) translateY(-50%);
+    transform: scaleX(1) translateY(-50%);
+  }
+  .snip1461:hover h2:after,
+  .snip1461.hover h2:after {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+
+
+
+
+/*Finish Productos*/

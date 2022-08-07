@@ -1,0 +1,28 @@
+@import "variables" ,"mixins";
+/*Start Info global*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body::-webkit-scrollbar{
+    width: 8px;      
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: $rosa-claro;
+    border-radius: 50px;    
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: $gris-claro;    
+}
+
+/*Finish Info global*/

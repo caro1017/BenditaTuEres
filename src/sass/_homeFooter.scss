@@ -1,0 +1,208 @@
+@import "variables" ,"mixins";
+/*start Footer*/
+   
+    // Menu footer
+
+    .footer{
+        display: flex;
+        position: static;
+        justify-content: center;
+        background-color: $gris-claro;
+        z-index: -10;
+        width: 100vw;
+        margin-top: 10%;
+        height: 20rem;
+    }
+
+    .circuloF{
+        width: 15rem;
+        position: absolute;
+        @media (max-width: 450px){
+            width: 7rem;
+            margin-top: -60px;
+        }
+    }
+
+    .logo-footer{
+        width: 10rem;
+        margin-top: 6rem;
+        margin-left: 6rem;
+        @media (max-width: 450px){
+            width: 6.5rem;
+            margin-top: 6rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .logo-footer:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    //---
+
+    .menu-izquierdo{
+        list-style: none;
+        margin-top: 5rem;
+        margin-left: 4rem;
+        @media (max-width: 450px){
+            margin-left: -1rem;
+        }
+       
+    }
+
+    .menu-izquierdo li a{
+        color: $gris-oscuro;
+        text-decoration: none;
+        font-weight: 200;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s;
+        &:hover, &:focus{
+          background-size: 100% 2px;
+        }
+        @media (max-width: 450px){
+            font-size: 15px;
+        }
+        
+    }
+
+    .menu-izquierdo li a:hover,
+    .menu-izquierdo li a_active {
+      color: $rosa-oscuro;
+      transition: 0.5s;
+      transform: scale(1.2);
+    }
+
+    .menu-izquierdo li{
+        margin: 10px;
+        @media (max-width: 450px){
+            margin: 1px;
+        }
+       
+    }
+
+    //-------
+
+    .menu-derecho{
+        list-style: none;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        @media (max-width: 450px){
+            margin-left: -10px;
+        }
+       
+    }
+
+    .menu-derecho li a{
+        color: $gris-oscuro;
+        text-decoration: none;
+        font-weight: 200;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s;
+        &:hover, &:focus{
+          background-size: 100% 2px;
+        }
+        @media (max-width: 450px){
+            font-size: 15px;
+            margin-left: -10px;
+        }
+        
+    }
+
+    .menu-derecho li a:hover,
+    .menu-derecho li a_active {
+      color: $rosa-oscuro;
+      transition: 0.5s;
+      transform: scale(1.2);
+    }
+
+    .menu-derecho li{
+        margin: 10px;
+        @media (max-width: 450px){
+            margin: -1px;
+        }
+    }
+
+    //---
+
+   
+.linea-footer {  
+    margin-left: 30%;
+    margin-top: -9%;
+    width: 50%;    
+    border-top:1px solid $rosa-oscuro;
+    position: absolute;
+    float:left; 
+    @media (max-width: 450px){
+        width: 70%;
+        margin-left: 15%;
+        margin-top: -30%;
+    }
+
+}
+
+//---
+
+.redes-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -5rem;
+}
+
+
+.redes-footer i{
+    color: $gris-oscuro;
+    font-size: 18px;
+    @media (max-width: 450px){
+        font-size: 15px;
+    }
+}
+
+.redes-footer i:hover{
+    color: $rosa-oscuro;
+    transform: scale(1.3);
+}
+
+.redes-footer a{
+    margin-left: 5rem;
+    @media (max-width: 450px){
+        margin-left: 2rem;
+    }
+}
+
+
+.autor{
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 7rem;
+    font-size: 14px;
+    color: $rosa-oscuro;
+    &:hover{
+        color: $gris-oscuro;
+    }
+
+    @media (max-width: 450px){
+        font-size: 12px;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+    
+
+
+
+      
+      
+
+/*finish Footer*/

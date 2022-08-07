@@ -1,0 +1,70 @@
+@import "variables" ,"mixins";
+/* Start video */
+.videoRopa-wrapper video {
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    
+    width: 40rem;
+    margin-left: 28rem;
+    margin-top: -16rem;
+
+
+    @media (max-width: 970px){
+        width: 60vw;
+        height: auto;
+        margin-left: 10rem;
+        margin-top: -10rem;
+   
+    }
+
+    @media (max-width: 480px) {
+    width: 79vw;
+    height: auto;
+    margin-left: 0;
+    margin-top: -9rem;
+    }
+
+    @media (max-width: 400px) {
+    width: 80vw;
+    height: auto;
+    margin-left: 0;
+    margin-top: -7rem;
+    }
+}
+
+.videoRopa-wrapper h1{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 35%;
+    color: $blanco;
+    font-size: 150px;
+    opacity: 0.5;
+    letter-spacing: 5px;
+
+    @media (max-width: 970px){
+        margin-top: 50rem;
+   
+    }
+
+
+    @media (max-width: 480px){
+        margin-left: 30%;
+        margin-top: 50%;
+        font-size: 80px;
+    }
+
+    @media (max-width: 400px){
+        margin-left: 30%;
+        margin-top: 60%;
+    }
+}
+
+
+
+/* Finish video */

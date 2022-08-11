@@ -51,7 +51,7 @@
     height: 20rem;
     box-shadow: -20px -20px 1px $rosa-oscuro;
     @media (max-width: 450px){
-        margin-left: 10rem;
+        margin-left: 9.5rem;
         margin-top: 18.5rem;
         width: 15rem;
         height: 10rem;
@@ -134,7 +134,7 @@
 }
 
 .contenedor-titulo-controles .indicadores button {
-	background: rebeccapurple;
+	background: $gris-oscuro;
 	height: 2px;
 	width: 10px;
 	cursor: pointer;
@@ -144,7 +144,7 @@
 
 .contenedor-titulo-controles .indicadores button:hover,
 .contenedor-titulo-controles .indicadores button.activo {
-	background: red;
+	background: $rosa-oscuro;
 }
 
 .imagenes-recomendadas{
@@ -154,7 +154,7 @@
 .imagenes-recomendadas .contenedor-principal {    
 	display: flex;
 	align-items: center;
-	position: relative;       
+	position: relative;  
 }
 
 .imagenes-recomendadas .contenedor-principal .flecha-izquierda,
@@ -164,13 +164,18 @@
 	background: none;
 	font-size: 15px;
 	height: 60%;
-	top: calc(50% - 25%);
+    margin-top: 80rem;
+	top: calc(50% - 50%);
 	line-height: 40px;
 	width: 50px;
-	color: rosybrown;
+	color: $rosa-oscuro;
 	cursor: pointer;
 	z-index: 500;
-	transition: .2s ease all;	
+	transition: .2s ease all;
+    @media (max-width: 450px){
+        margin-top: 50rem;
+
+    }	
     
 
    
@@ -179,7 +184,7 @@
 .imagenes-recomendadas .contenedor-principal .flecha-izquierda:hover,
 .imagenes-recomendadas .contenedor-principal .flecha-derecha:hover {
 	opacity: 0.7;
-    color: floralwhite;
+    color: $gris-oscuro;
 }
 
 .imagenes-recomendadas .contenedor-principal .flecha-izquierda {
@@ -195,21 +200,27 @@
 	width: 100vw;    
     overflow: hidden;	
 	scroll-behavior: smooth;
-   
+    
 }
 
 .imagenes-recomendadas .contenedor-carousel .carouselNos {
 	display: flex;
 	flex-wrap: nowrap;
-    height: 30rem;
+    margin-top: 80rem;
+    height: 45rem;
+    @media (max-width: 450px){
+        margin-top: 48rem;
+        height: 25rem;
+        width: 40rem;
+    }
 }
 
 .imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos {
      
     transition: .1s ease all;
 	min-width: 50%;	
-	box-shadow: 5px 5px 10px black;
-    opacity: 0.3;	
+	box-shadow: 5px 5px 10px $gris-claro;
+    opacity: 0.7;	
    
 }
 
@@ -220,7 +231,7 @@
 
 .imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos img {    
 	width: 100%; 
-    vertical-align: top;      
+    vertical-align: top;   
 }
 
 /*Finaliza Carrusel*/

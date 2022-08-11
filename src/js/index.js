@@ -42,7 +42,7 @@ flechaIzquierda.addEventListener('click', () => {
 });
 
 /* Numero de indicadores*/
-const numeroPaginas = Math.ceil(Imagenes.length / 4);
+const numeroPaginas = Math.ceil(Imagenes.length / 2);
 for(let i = 0; i < numeroPaginas; i++){
 	const indicador = document.createElement('button');
 
@@ -75,3 +75,7 @@ fila.addEventListener('mouseleave', () => {
 });
 
 /*Finaliza Carrusel*/
+
+/*Start Botton*/
+
+/*Finish Botton*/

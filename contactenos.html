@@ -12,13 +12,203 @@
       <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300&display=swap" rel="stylesheet">
       <!--Iconos-->
       <script src="https://kit.fontawesome.com/3405a3f558.js" crossorigin="anonymous"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <!--Estilos-->
       <link rel="stylesheet" href="./src/css/index.css">
          
       <title>Contactenos Bendita tu eres</title>
 </head>
 <body>
-    <h1>Contactenos</h1>
+  <header>
+    <!--Start Menu-->
+    <section class="menu">
+    <!--Start Logo-->
+    <section class="logo">
+      <div class="contenedor-logo">
+          <a href="./index.html"><img src="./src/img/Logo.png" alt="logo" id="logo"></a>              
+      </div>
+  </section> 
+    <!--Finish Logo-->
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars-staggereds"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="./index.html" class="nav-menu-link nav-link">Inicio</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./nosotros.html" class="nav-menu-link nav-link">Nosotros</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./ropa.html" class="nav-menu-link nav-link">Ropa</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./accesorios.html" class="nav-menu-link nav-link ">Accesorios</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./saldos.html" class="nav-menu-link nav-link ">Saldos</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="./contactenos.html" class="nav-menu-link nav-link ">Contactenos</a>
+            </li>
+            <a class="carrito" href="#"><i class="fa-solid fa-bag-shopping fa-bounce"></i></a>
+          </ul>
+        </nav>
+        <div class="circulo-header">
+          <img src="./src/img/circulo superior.png" alt="circulo">
+        </div>
+    </section>
+    <!--Finish Menu-->
+    <!--Start Contenedor/Social Media-->
+    <span class="line"></span>
+    <section>
+        <div class="socialMedia">
+            <div class=" Social">
+                <div class="redes">
+                    <a href="https://api.whatsapp.com/send?phone=0573173720435&text=Hola, Nececito mas informacion!" target="_blank"><i class="link fa-brands fa-whatsapp " ></i></a>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/benditatueres_tienda_/?hl=es" target="_blank"><i class="link fa-brands fa-instagram "></i></a>
+                </div>
+                <div class="redes">
+                    <a href="https://goo.gl/maps/13jjnRnEhysNhwiL8" target="_blank"><i class="link fa-solid fa-location-dot"></i></a>
+                </div>                             
+            </div>
+         </div> 
+    </section>
+    <!--Finish Contenedor/Social Media-->
+    <!--Start video-->
+    <section class="video">
+      <div class="video-wrapper">
+          <video playsinline autoplay muted loop poster="./src/img/index img.jpg">
+          <source src="./src/video/Contactenos.mp4" type="video/webm">
+           Your browser does not support the video tag.
+          </video>
+      </div>
+  </section>
+    <!--Finish video-->
+  </header>
+  <main>
+    <!--Start Info--> 
+    <section class="info">
+      <div>
+        <div class="contenedor1">
+          <div class="linea">&nbsp;</div>
+              <div class="leyenda">Contactenos</div>
+        </div>
+        <div class="textoCont">
+          <h2>Horario de Atención</h2>
+          <ol>
+            <i class="fa-regular fa-clock"></i>
+            <ul> L - V / 9:00 a.m. a 6:00 p.m </ul>
+            <ul> S - D / 10:00 a.m. a 4:00 p.m </ul>
+            <br>
+            <hr>
+            <br>
+          </ol>
+          </div>
+      </div>
+      <div>
+      <img class="imgSuperior" src="./src/img/Index 1.jpg" alt="moda">
+      </div>
+      <div class="lateral-superior">
+        <img src="./src/img/Circulo lateral superio.png" alt="circulo">
+      </div>
+    </section>
+    <!--Finish Info--> 
+    <!-- Start Formulario Contactenos --> 
+    <div class="content">
+      <div class="contact-wrapper">
+    
+        <div class="contact-form">
+    
+          <h3>Contactenos</h3>
+          <form action="/">
+            <p>
+              <label for="fullname">Nombre</label>
+              <input type="text" name="fullname" id="fullname">
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </p>
+            <p>
+              <label for="phone">Telefono</label>
+              <input type="tel"  required name="phone">
+            </p>
+            <p>
+              <label for="affair">Asunto</label>
+              <input type="text" name="affair">
+            </p>
+            <p class="block">
+              <label for="message">Mensaje</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+             <p class="block">
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
+        </div>
+    
+        <div class="contact-info">
+          <h4>Información</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Cl. 35 Sur #42-48, Envigado, Antioquia</li>
+            <li><i class="fas fa-phone"></i> 317 3720435</li>
+            <li><i class="fas fa-envelope-open-text"></i> Benditatuerestienda@gmail.com</li>
+          </ul>
+          <img src="./src/img/LOGO 2.png" alt="">
+          <p>Una Marca Inspirada en Mujeres que con su delicadeza destacan estas prendas</p>
+          <p> bendita-tu-eres.netlify.app</p>
+        </div>
+    
+      </div>
+    </div>
+    <!-- Finish Formulario Contactenos --> 
+    <div>
+      <img class="circuloF" src="./src/img/Circulo lateral.png" alt="Circulo">
+    </div>
+  </main>
+   <!--Start Footer--> 
+   <footer>
+    <section >
+      <section class="footer">
+    
+  <section class="mif">
+    <ul class="menu-izquierdo">
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./nosotros.html">Nosotros</a></li>
+      <li><a href="./ropa.html">Ropa</a></li>
+    </ul>
+  </section>
+  <a href="#"><img class="logo-footer" src="./src/img/Logo.png" alt="Logo Bendita tu eres"></a>
+  <section >
+    <ul class="menu-derecho">
+      <li><a href="./accesorios.html">Accesorios</a></li>
+      <li><a href="./saldos.html">Saldos</a></li>
+      <li><a href="./contactenos.html">Contactenos</a></li>
+    </ul>
+  </section>
+</section>
+  <div class="linea-footer"></div>
+ <!--Start Redes sociales footer-->
+<section class="redes-footer">
+  <div>
+    <a class="primero" href="https://api.whatsapp.com/send?phone=0573173720435&text=Hola, Nececito mas informacion!" target="_blank"><i class="fa-brands fa-whatsapp " ></i></a>
+  </div>
+  <div>
+    <a href="https://www.instagram.com/benditatueres_tienda_/?hl=es" target="_blank"><i class="fa-brands fa-instagram  "></i></a>
+  </div>
+  <div>
+    <a href="https://goo.gl/maps/13jjnRnEhysNhwiL8" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
+  </div> 
+ </section>
+</section>
+<a href="https://github.com/caro1017" target="_blank"><p class="autor">Copyright &copy; 2022 by Carolina Uribe Botero / github-caro1017</p></a>
+ <!--Finish Redes sociales footer-->
+  </footer>
+  <!--Finish Footer--> 
 
 
     <!--JavaScript-->

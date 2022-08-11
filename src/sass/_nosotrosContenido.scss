@@ -1,0 +1,226 @@
+@import "variables" ,"mixins";
+
+/* Start Contenido Nosotros */
+
+.contenidoNos .sup{
+    position: absolute;
+    background-color: $rosa-claro;
+    margin-left: 15rem;
+    margin-top: 10rem;
+    width: 25rem;
+    height: 20rem;
+    box-shadow: 20px -20px 1px $rosa-oscuro;
+    @media (max-width: 450px){
+        margin-left: 1rem;
+        margin-top: 5rem;
+        width: 15rem;
+        height: 10rem;
+    }
+}
+
+.contenidoNos h2{
+    color: $gris-oscuro;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 7rem;
+    @media (max-width: 450px){
+        font-weight: 300;
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+}
+
+.contenidoNos p{
+    text-align: center;
+    color: $gris-oscuro;
+    margin-top: 2rem;
+    @media (max-width: 450px){
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+}
+
+
+
+.contenidoNos2 .sup{
+    position: absolute;
+    background-color: $rosa-claro;
+    margin-left: 50rem;
+    margin-top: 30rem;
+    width: 25rem;
+    height: 20rem;
+    box-shadow: -20px -20px 1px $rosa-oscuro;
+    @media (max-width: 450px){
+        margin-left: 10rem;
+        margin-top: 18.5rem;
+        width: 15rem;
+        height: 10rem;
+    }
+}
+
+.contenidoNos2 h2{
+    color: $gris-oscuro;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 7rem;
+    @media (max-width: 450px){
+        font-weight: 300;
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+}
+
+.contenidoNos2 p{
+    text-align: center;
+    color: $gris-oscuro;
+    margin-top: 2rem;
+    @media (max-width: 450px){
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+}
+
+
+
+.contenidoNos3 .sup{
+    position: absolute;
+    background-color: $rosa-claro;
+    margin-left: 15rem;
+    margin-top: 50rem;
+    width: 25rem;
+    height: 20rem;
+    box-shadow: 20px 20px 1px $rosa-oscuro;
+    @media (max-width: 450px){
+        margin-left: 1rem;
+        margin-top: 30rem;
+        width: 15rem;
+        height: 10rem;
+    }
+}
+
+.contenidoNos3 h2{
+    color: $gris-oscuro;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 7rem;
+    @media (max-width: 450px){
+        font-weight: 300;
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+}
+
+.contenidoNos3 p{
+    text-align: center;
+    color: $gris-oscuro;
+    margin-top: 2rem;
+    @media (max-width: 450px){
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+}
+  
+/* Finish Contenido Nosotros */
+
+/*Inicia Carrusel*/
+
+.carrusel::-webkit-scrollbar{
+    display: none;     
+}
+
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: center;	
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: rebeccapurple;
+	height: 2px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 5px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+.imagenes-recomendadas{
+    margin-bottom: 70px;
+}
+
+.imagenes-recomendadas .contenedor-principal {    
+	display: flex;
+	align-items: center;
+	position: relative;       
+}
+
+.imagenes-recomendadas .contenedor-principal .flecha-izquierda,
+.imagenes-recomendadas .contenedor-principal .flecha-derecha {	
+    
+	border: none;
+	background: none;
+	font-size: 15px;
+	height: 60%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: rosybrown;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;	
+    
+
+   
+}
+
+.imagenes-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.imagenes-recomendadas .contenedor-principal .flecha-derecha:hover {
+	opacity: 0.7;
+    color: floralwhite;
+}
+
+.imagenes-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.imagenes-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+.imagenes-recomendadas .contenedor-carousel {
+  
+	width: 100vw;    
+    overflow: hidden;	
+	scroll-behavior: smooth;
+   
+}
+
+.imagenes-recomendadas .contenedor-carousel .carouselNos {
+	display: flex;
+	flex-wrap: nowrap;
+    height: 30rem;
+}
+
+.imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos {
+     
+    transition: .1s ease all;
+	min-width: 50%;	
+	box-shadow: 5px 5px 10px black;
+    opacity: 0.3;	
+   
+}
+
+.imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos.hover {	
+	transform-origin: center;
+	opacity: 100%;
+}
+
+.imagenes-recomendadas .contenedor-carousel .carouselNos .fortalezaNos img {    
+	width: 100%; 
+    vertical-align: top;      
+}
+
+/*Finaliza Carrusel*/

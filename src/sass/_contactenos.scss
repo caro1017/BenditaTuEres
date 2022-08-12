@@ -5,11 +5,28 @@
     position: absolute;
     margin-left: 52%;
     margin-top: 15%;
+    @media (max-width: 850px){
+      margin-left: 35%;
+      margin-top: -5%;
+    }
+
+    @media (max-width: 780px){
+      margin-left: 20%;
+      margin-top: -5%;
+    }
+    @media (max-width: 480px){
+      margin-left: 10%;
+      margin-top: 0;
+    }
 }
 
 .textoCont h2{
     color: $gris-oscuro;
     font-weight: 300;
+    @media (max-width: 300px){
+      font-weight: 200;
+      font-size: 14px;
+    }
 }
 
 .info2{
@@ -18,12 +35,19 @@
 
 .textoCont ul{
     color: $gris-oscuro;
+    @media (max-width: 300px){
+      font-size: 12px;
+    }
 }
 
 .textoCont i{
     color: $rosa-oscuro;
     font-size: 20px;
     margin-top: 1rem;
+   @media (max-width: 300px){
+      margin-top: 15px;
+      font-size: 15px;
+    }
 }
 
 .textoCont hr{
@@ -41,6 +65,44 @@
     color: $gris-oscuro;
     transform: scale(1.2);
     transition: 0.5s;
+}
+
+.imgContactenos{
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 15%;
+  box-shadow: 30px -30px 1px $rosa-oscuro;
+
+  @media (max-width: 850px){
+  width: 40%;
+  margin-top: 20%;
+  margin-left: 15%;
+  box-shadow: 15px -15px 1px $rosa-oscuro;
+
+  }
+
+  @media (max-width: 768px){
+  width: 50%;
+  margin-top: 30%;
+  margin-left: 15%;
+  box-shadow: 15px -15px 1px $rosa-oscuro;
+    }
+
+
+  @media (max-width: 480px){
+  width: 60%;
+  margin-top: 50%;
+  margin-left: 15%;
+  box-shadow: 15px -15px 1px $rosa-oscuro;
+    }
+
+  @media (max-width: 300px){
+  width: 80%;
+  margin-top: 90%;
+  margin-left: 15%
+
+    }
+ 
 }
 
 /* Finish Contactenos */
@@ -182,10 +244,6 @@
   /* Large Screen */
   
   @media (min-width: 700px) {
-    body {
-      padding: 0 4rem;
-    }
-  
     .contact-wrapper {
       display: grid;
       grid-template-columns: 2fr 1fr;

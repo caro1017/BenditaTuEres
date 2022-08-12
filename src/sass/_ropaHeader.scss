@@ -61,34 +61,23 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 1350px){
-        margin-top: 40%;
-        margin-left: -1%;
-    }
-    @media (max-width: 970px){
-        margin-top: 50%;
+    @media (max-width: 768px){
+      margin-top: 20%;
     }
 
     @media (max-width: 480px){
-        margin-top: 30%;
-        font-size: 14.5px;
+      margin-top: 20%;
+    }
+
+    @media (max-width: 300px){
+      margin-top: 5%;
     }
   }
 
   .Social2{
     position: absolute;
     margin-bottom: 0;
-    @media (max-width: 1350px){
-    position: absolute;
-    margin-bottom: 6rem;
-    }
-    @media (max-width: 980px){
-      margin-bottom: -1rem;
-    }
-
-    @media (max-width: 420px){
-      margin-bottom: -5rem;
-    }
+   
   }
 
   .redes2{
@@ -103,17 +92,29 @@
     height: 30px;
     color: $rosa-oscuro;
     
-    @media (max-width: 970px){
-      margin-left: 8rem;
-      color: $blanco;
+    @media (max-width: 850px){
+      margin-left: 3.5rem;
+      
     }
 
-    @media (max-width: 420px){
-        margin-left: 5rem;
-        font-size: 18px;
-        color: $blanco;
-        
+    @media (max-width: 768px){
+      margin-left: 2rem;
+      color: $blanco;
+      font-size: 15px;
     }
+
+    @media (max-width: 480px){
+      margin-left: 2rem;
+      color: $blanco;
+      font-size: 15px;
+    }
+
+    @media (max-width: 300px){
+      margin-left: 2rem;
+      color: $blanco;
+      font-size: 13px;
+    }
+
 
   }
   

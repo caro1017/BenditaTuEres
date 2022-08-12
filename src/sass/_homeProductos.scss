@@ -1,47 +1,6 @@
 @import "variables" ,"mixins";
 /*start Productos*/
 
-.linea2 {  
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 20%;    
-    border-top:2px solid $rosa-oscuro;
-    position: relative;
-    float:left; 
-    @media (max-width: 985px){
-        width: 20%; 
-    }
-
-    @media (max-width: 850px){
-        width: 20%; 
-    }
-
-    
-    @media (max-width: 695px){
-        display: none;
-    }
-
-
-}
-
-.leyenda2 {
-    margin-left: 4%;
-    margin-top: 8.5%;
-    font-size: 30px;
-    color: $rosa-oscuro;
-    font-weight: 300;
-    float:left;
-
-    @media (max-width: 450px){
-        display: none;
-    }
-}
-
-.leyenda2:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
-
 //imagenes
 
 .imagenes{
@@ -49,7 +8,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    @media (max-width: 450px){
+    @media (max-width: 768px){
         display: flex;
         flex-wrap: wrap;
     }
@@ -67,9 +26,27 @@
     text-align: center;
     font-size: 16px;
     background-color: $gris-oscuro;
-    @media (max-width: 450px){
+
+    @media (max-width: 1026px){
+        margin-left: 8px;
+        margin-top: 60px;
+    }
+    
+    @media (max-width: 850px){
+      margin-left: 8px;
+        margin-top: 20px;
+        width: 30%;
+    }
+    
+    @media (max-width: 480px){
         margin-left: 5px;
         margin-top: 40px;
+    }
+    
+    @media (max-width: 300px){
+        margin-left: 5px;
+        margin-top: 20px;
+        width: 20%;
     }
     
   }

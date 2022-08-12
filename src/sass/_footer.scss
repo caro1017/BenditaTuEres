@@ -16,21 +16,48 @@
 
     .circuloF{
         width: 15rem;
+        margin-top: -90px;
         position: absolute;
-        @media (max-width: 450px){
+
+        @media (max-width: 920px){
+            width: 9rem;
+            margin-top: -5px;
+        }
+
+        @media (max-width: 850px){
+            width: 10rem;
+            margin-top: -8px;
+        }
+        @media (max-width: 768px){
+            width: 10rem;
+            margin-top: -170px;
+        }
+
+        @media (max-width: 480px){
             width: 7rem;
             margin-top: -60px;
         }
+        @media (max-width: 300px){
+            display: none;
     }
+}
 
     .logo-footer{
         width: 10rem;
         margin-top: 6rem;
         margin-left: 6rem;
-        @media (max-width: 450px){
-            width: 6.5rem;
-            margin-top: 9rem;
+        @media (max-width: 780px){
+            width: 10rem;
+            margin-top: 6rem;
             margin-left: 1rem;
+        }
+        @media (max-width: 480px){
+            width: 6.5rem;
+            margin-top: 8rem;
+            margin-left: 1rem;
+        }
+        @media (max-width: 300px){
+            width: 5rem;
         }
     }
 
@@ -45,10 +72,18 @@
         list-style: none;
         margin-top: 5rem;
         margin-left: 4rem;
-        @media (max-width: 450px){
-            margin-left: -1rem;
-            margin-top: 8rem;
+
+        @media (max-width: 780px){
+            margin-left: 1rem;
+            margin-top: 5rem;
         }
+
+
+        @media (max-width: 480px){
+            margin-left: -2rem;
+            margin-top: 7rem;
+        }
+       
        
     }
 
@@ -64,8 +99,11 @@
         &:hover, &:focus{
           background-size: 100% 2px;
         }
-        @media (max-width: 450px){
+        @media (max-width: 480px){
             font-size: 15px;
+        }
+        @media (max-width: 300px){
+            font-size: 12px;
         }
         
     }
@@ -79,8 +117,13 @@
 
     .menu-izquierdo li{
         margin: 10px;
-        @media (max-width: 450px){
+        font-size: 1.2rem;
+       
+        @media (max-width: 480px){
             margin: 1px;
+        }
+        @media (max-width: 300px){
+            margin: 2px;
         }
        
     }
@@ -91,9 +134,13 @@
         list-style: none;
         margin-top: 5rem;
         margin-left: 5rem;
-        @media (max-width: 450px){
-            margin-left: -10px;
-            margin-top: 8rem;
+        @media (max-width: 780px){
+            margin-left: -1rem;
+            margin-top: 5rem;
+        }
+        @media (max-width: 480px){
+            margin-left: -2px;
+            margin-top: 7rem;
         }
        
     }
@@ -110,9 +157,12 @@
         &:hover, &:focus{
           background-size: 100% 2px;
         }
-        @media (max-width: 450px){
+        @media (max-width: 480px){
             font-size: 15px;
             margin-left: -10px;
+        }
+        @media (max-width: 300px){
+            font-size: 12px;
         }
         
     }
@@ -126,8 +176,13 @@
 
     .menu-derecho li{
         margin: 10px;
-        @media (max-width: 450px){
+        font-size: 1.2rem;
+        @media (max-width: 480px){
             margin: -1px;
+        }
+
+        @media (max-width: 300px){
+            margin: 2px;
         }
     }
 
@@ -141,10 +196,26 @@
     border-top:1px solid $rosa-oscuro;
     position: absolute;
     float:left; 
-    @media (max-width: 450px){
+    @media (max-width: 920px){
         width: 70%;
         margin-left: 15%;
-        margin-top: -30%;
+        margin-top: -15%;
+    }
+    @media (max-width: 780px){
+        width: 70%;
+        margin-left: 15%;
+        margin-top: -27%;
+    }
+    @media (max-width: 480px){
+        width: 70%;
+        margin-left: 15%;
+        margin-top: -20%;
+    }
+
+    @media (max-width: 300px){
+        width: 70%;
+        margin-left: 15%;
+        margin-top: -50%;
     }
 
 }
@@ -156,13 +227,23 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: -5rem;
+    
+    @media (max-width: 768px){
+        margin-top: -7rem;
+    }
+
+    @media (max-width: 480px){
+        margin-top: -7rem;
+    }
+
+    
 }
 
 
 .redes-footer i{
     color: $gris-oscuro;
-    font-size: 18px;
-    @media (max-width: 450px){
+    font-size: 20px;
+    @media (max-width: 480px){
         font-size: 15px;
     }
 }
@@ -174,7 +255,7 @@
 
 .redes-footer a{
     margin-left: 5rem;
-    @media (max-width: 450px){
+    @media (max-width: 480px){
         margin-left: 2rem;
     }
 }
@@ -190,9 +271,13 @@
         color: $gris-oscuro;
     }
 
-    @media (max-width: 450px){
+    @media (max-width: 480px){
         font-size: 12px;
         margin-left: 0;
+    }
+
+    @media (max-width: 300px){
+        font-size: 8.5px;
     }
 }
 

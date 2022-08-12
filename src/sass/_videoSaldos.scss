@@ -1,6 +1,6 @@
 @import "variables" ,"mixins";
 /* Start video */
-.videoA-wrapper video {
+.videoSaldos-wrapper video {
     position: relative;
     z-index: -2;
     overflow: hidden;
@@ -52,45 +52,40 @@
     }
 }
 
-.videoA-wrapper h1{
+.videoSaldos-wrapper h1{
     position: absolute;
-    margin-left: 25%;
+    margin-left: 40%;
     margin-top: 35%;
     color: $blanco;
-    font-size: 120px;
+    font-size: 150px;
     opacity: 0.5;
     letter-spacing: 5px;
 
     @media (max-width: 1026px){
-        margin-left: 15%;
+        margin-left: 20%;
         margin-top: 30%;
-        font-size: 110px;
-    }
-
-    @media (max-width: 850px){
-        margin-left: 15%;
-        margin-top: 40%;
-        font-size: 90px;
+        font-size: 150px;
     }
     
 
+    
     @media (max-width: 768px){
-        margin-left: 10%;
+        margin-left: 15%;
         margin-top: 55%;
-        font-size: 65px;
+        font-size: 100px;
     }
     
     
     @media (max-width: 480px){
-        margin-left: 10%;
+        margin-left: 15%;
         margin-top: 60%;
-        font-size: 45px;
+        font-size: 70px;
     }
     
     @media (max-width: 300px){
-        margin-left: 10%;
+        margin-left: 15%;
         margin-top: 60%;
-        font-size: 30px;
+        font-size: 50px;
     }
 }
 

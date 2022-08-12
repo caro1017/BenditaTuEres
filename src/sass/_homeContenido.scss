@@ -2,41 +2,53 @@
 /*start Info*/
 .linea {  
     margin-left: -30%;
-    margin-top: 50%;
-    width: 80%;    
+    margin-top: 30%;
+    width: 70%;    
     border-top:2px solid $rosa-oscuro;
     position: relative;
     float:left; 
-    @media (max-width: 985px){
-        width: 70%; 
+    @media (max-width: 1026px){
+        margin-top: 45%;
     }
-
     @media (max-width: 850px){
-        display: none; 
+        margin-top: 50%;
+        width: 60%;
     }
-
-    
-    @media (max-width: 695px){
-        display: none;
-    }
-
-
-
 }
 
 .leyenda {
     margin-left: 4%;
-    margin-top: 48%;
-    font-size: 30px;
+    margin-top: 27%;
+    font-size: 40px;
     color: $rosa-oscuro;
     font-weight: 300;
     float:left;
-
-    @media (max-width: 450px){
-        font-size: 20px;
-        margin-top: 250px;
-        margin-left: 20%;
+    @media (max-width: 1026px){
+        margin-top: 40%;
+        font-size: 30px;
     }
+
+    @media (max-width: 850px){
+        margin-top: 45%;
+        font-size: 22px;
+        margin-left: 15%;
+
+    }
+
+    @media (max-width: 768px){
+        margin-top: 10%;
+        font-size: 30px;
+        margin-left: 15%;
+      }
+  
+    @media (max-width: 480px){
+        margin-top: 60%;
+      }
+  
+    @media (max-width: 300px){
+        font-size: 15px;
+        margin-top: 130%;
+      }
 }
 
 .leyenda:hover{
@@ -51,58 +63,103 @@
     margin-left: 30%;
     background-color: $gris-claro;
     width: 45%;
-    height: 400%;
-    @media (max-width: 1286px){
-        margin-left: 40%;
-        height: 350%;
+    height: 210%;
+    @media (max-width: 1026px){
+      height: 20%;
     }
 
-    @media (max-width: 985px){
-        margin-left: 40%;
-        width: 50%;
-        height: 60%;
+    @media (max-width: 980px){
+      height: 170%;
     }
 
     @media (max-width: 850px){
-        margin-left: 45%;
-        height: 45%;
+      height: 190%;
     }
 
-    @media (max-width: 695px){
-        margin-left: 50%;
+    @media (max-width: 768px){
+      height: 300%;
     }
-
-    @media (max-width: 450px){
-        margin-left: 30%;
-        height: 120%;
-        width: 60%;
+    
+    @media (max-width: 480px){
+      height: 200%;
+    }
+    
+    @media (max-width: 300px){
+      height: 250%;
     }
 }
 
 .texto{
     position: absolute;
     margin-left: 55%;
-    margin-top: 15%;
+    margin-top: 5%;
+    font-size: 20px;
     color: $gris-oscuro;
-    @media (max-width: 450px){
-        font-size: 14px;
-        margin-left: 40%;
-        margin-top: 18%;
-        text-align: right;
+    @media (max-width: 1026px){
+        margin-top: 5%;
+        font-size: 20px;
     }
+
+    @media (max-width: 850px){
+        margin-top: -2rem;
+        font-size: 15px;
+        margin-left: 45%;
+        text-align: center;
+    }
+    
+    @media (max-width: 768px){
+        margin-top: 1rem;
+        font-size: 15px;
+        margin-left: 35%;
+        text-align: center;
+      }
+  
+    @media (max-width: 480px){
+        font-size: 12px;
+        margin-top: 2%;
+        margin-left: 35%;
+        text-align: center;
+      }
+  
+    @media (max-width: 300px){
+        font-size: 10px;
+        margin-top: 0.2rem;
+        margin-left: 40%;
+      }
+
+   
+   
 }
 
 .imgSuperior{
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 15%;
+    box-shadow: 30px -30px 1px $rosa-oscuro;
+
+    @media (max-width: 850px){
     width: 40%;
     margin-top: 20%;
-    margin-left: 5%;
-    box-shadow: 30px -30px 1px $rosa-oscuro;
-    @media (max-width: 450px){
-        width: 70%;
-        margin-top: 50%;
-        margin-left: 5%;
-        box-shadow: 15px -15px 1px $rosa-oscuro; 
+    margin-left: 15%;
+    box-shadow: 15px -15px 1px $rosa-oscuro;
+
     }
+
+    @media (max-width: 768px){
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 15%;
+    box-shadow: 15px -15px 1px $rosa-oscuro;
+      }
+
+  
+    @media (max-width: 480px){
+    width: 50%;
+    margin-top: 35%;
+    margin-left: 15%;
+    box-shadow: 15px -15px 1px $rosa-oscuro;
+      }
+   
 }
 
 .lateral{
@@ -114,21 +171,34 @@
 .imgLateral{
     position: relative;
     z-index: -1;
-    width: 50%;
-    margin-top: -25%;
-    margin-left: 40%;
+    width: 30%;
+    margin-top: -30%;
+    margin-left: 50%;
     box-shadow: none;
-    @media (max-width: 980px){
-        width: 72%; 
-        margin-top: -35px;
-        margin-left: 40%;
-    }
-    @media (max-width: 450px){
-        width: 85%; 
-        margin-left: 5rem;
-        margin-top: 2rem;
-    }
-    
+    box-shadow: 30px 30px 1px $rosa-oscuro;
+
+  @media (max-width: 850px){
+    width: 40%;
+    margin-top: -20%;
+    margin-left: 50%;
+    box-shadow: 15px 15px 1px $rosa-oscuro;
+  }
+
+  @media (max-width: 768px){
+    width: 50%;
+    margin-top: 12%;
+    margin-left: 40%;
+  }
+
+
+  @media (max-width: 480px){
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 40%;
+    box-shadow: 15px 15px 1px $rosa-oscuro;
+  }
+
+
 }
 
 .lateral-superior img{
@@ -137,12 +207,28 @@
     z-index: 20;
     margin-left: 80%;
     margin-top: -10rem;
-    width: 25rem;
-    @media (max-width: 450px){
-        width: 10rem;
-        margin-top: -150px;
-        margin-left: 75%;
+    width: 20%;
+
+    
+    @media (max-width: 850px){
+      margin-left: 65%;
+      margin-top: -4rem;
+      width: 35%;
     }
+    
+    @media (max-width: 768px){
+      margin-left: 55%;
+      margin-top: -4rem;
+      width: 45%;
+    }
+    
+    
+    @media (max-width: 480px){
+      margin-left: 62%;
+      margin-top: -4rem;
+      width: 38%;
+    }
+    
 }
 
 .lateral h2{
@@ -150,51 +236,116 @@
     z-index: 2;
     color: $rosa-oscuro;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: -4rem;
-    margin-left: 15rem;
-    @media (max-width: 980px){
-        font-size: 30px;
-        margin-top: -22rem;
-        margin-left: 8rem;
+    margin-left: 25rem;
+    margin-bottom: 15rem;
+
+    @media (max-width: 1026px){
+        margin-left: 13rem;
     }
-    @media (max-width: 450px){
-        font-size: 23px;
-        margin-left: 14rem;
+
+    @media (max-width: 850px){
+        margin-left: 12rem;
+        margin-top: -4rem;
+        font-size: 25px;
+        
+    }
+
+    @media (max-width: 768px){
+        margin-left: 15rem;
         margin-top: -3rem;
-    }
-    
+        font-size: 25px;
+      }
+
+  
+    @media (max-width: 480px){
+        margin-left: 10rem;
+        margin-top: -4rem;
+        font-size: 25px;
+      }
+
+    @media (max-width: 300px){
+        margin-left: 6.5rem;
+        margin-top: -3rem;
+        font-size: 20px;
+      }
 
 }
 
 .lateral p{
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: 10rem;
+    font-size: 20px;
     color: $gris-oscuro;
-
-    @media (max-width: 450px){
-        font-size: 14px;
-        margin-left: 35%;
+    @media (max-width: 1026px){
+        margin-left: 13rem;
     }
 
-    @media (max-width: 980px){
+    @media (max-width: 850px){
+    margin-left: 10rem;
+    margin-top: 8rem;
+    font-size: 15px;
+    text-align: none;
+        
+    }
+
+    @media (max-width: 768px){
+    margin-left: 5%;
+    margin-top: 5rem;
+    font-size: 15px;
+    text-align: center;
+       
+      }
+
+  
+    @media (max-width: 480px){
+    margin-left: 5%;
+    margin-top: 5rem;
+    font-size: 13px;
+    text-align: center;
+        
+      }
+
+    @media (max-width: 300px){
+        margin-left: 5%;
         margin-top: 4rem;
-    }
+        font-size: 10px;
+        text-align: center;
+        
+      }
+
 }
 
 .lateral-inf img{
-    width: 40%;
-    margin-top: -2%;
-    margin-left: 5%;
+    width: 30%;
+    margin-top: -5%;
+    margin-left: 15%;
     box-shadow: -30px 30px 1px $rosa-oscuro;
-    @media (max-width: 450px){
-        width: 70%;
-        margin-top: -5%;
-        margin-left: 6%;
-        box-shadow: -12px 12px 1px $rosa-oscuro; 
-    }
+    @media (max-width: 850px){
+      width: 40%;
+      margin-top: 10%;
+      margin-left: 15%;
+      box-shadow: -15px -15px 1px $rosa-oscuro;
+  
+      }
+  
+      @media (max-width: 768px){
+      width: 50%;
+      margin-top: 30%;
+      margin-left: 15%;
+      box-shadow: -15px -15px 1px $rosa-oscuro;
+        }
+  
+    
+      @media (max-width: 480px){
+      width: 50%;
+      margin-top: 25%;
+      margin-left: 15%;
+      box-shadow: -15px -15px 1px $rosa-oscuro;
+        }
+    
 }
-
 //Inicia Boton 
 
 .btn {
@@ -215,14 +366,21 @@
     margin-top: -20px;
     margin-left: 40rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    @media (max-width: 1286px){
-        margin-top: -20px;
-        margin-left: 32rem;
+    @media (max-width: 1026px){
+      margin-left: 25rem;
     }
-
-    @media (max-width: 450px){
-        margin-top: -10px;
-        margin-left: 11rem;
+    
+    @media (max-width: 768px){
+      margin-left: 18rem;
+    }
+    
+    
+    @media (max-width: 480px){
+      margin-left: 12rem;
+    }
+    
+    @media (max-width: 300px){
+      margin-left: 8rem;
     }
   }
   

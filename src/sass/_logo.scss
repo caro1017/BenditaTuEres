@@ -1,0 +1,79 @@
+@import "variables" ,"mixins";
+/*Start Logo*/
+
+.logo{
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    height: auto;
+}
+
+.contenedor-logo img{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 12rem;
+    margin-top: 20%;
+    margin-left: 8%;
+    @media (max-width: 768px){
+        margin-top: -0.2rem;
+        margin-left: -20px;
+        padding: 30px;
+        width: 12rem;
+    }
+
+    @media (max-width: 480px){
+        margin-top: -0.2rem;
+        margin-left: -20px;
+        padding: 30px;
+        width: 10rem;
+    }
+
+    @media (max-width: 300px){
+        margin-top: -0.2rem;
+        margin-left: -20px;
+        padding: 30px;
+        width: 9rem;
+    }
+
+   
+}
+/*Finish Logo*/
+
+/*Start circulo*/
+.circulo-header{
+    position: absolute;
+    z-index: -1;
+    margin-top: 0;
+    margin-left: 0;
+   
+}
+
+.circulo-header img{
+        margin-top: 0;
+        margin-left: 0;
+        width: 20rem;
+        @media (max-width: 1026px){
+            width: 17rem;
+        }
+
+        @media (max-width: 768px){
+            width: 13rem;
+        }
+
+        @media (max-width: 480px){
+            width: 10rem;
+        }
+
+        @media (max-width: 300px){
+            width: 8rem;
+        }
+
+        
+
+    
+
+
+}
+
+/*Finish circulo*/

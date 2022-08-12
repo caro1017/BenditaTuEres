@@ -5,14 +5,24 @@
   margin-left: 4%;
   margin-top: -10%;
   margin-bottom: 15%;
-  @media (max-width: 400px){
-    margin-left: 10%;
 
+  @media (max-width: 1026px){
+    margin-left: 10%;
   }
+  
+  @media (max-width: 768px){
+    margin-left:20%;
+  }
+  
+  
   @media (max-width: 480px){
     margin-left: 15%;
-
   }
+  
+  @media (max-width: 300px){
+    margin-left:5%;
+  }
+  
   
 }
 
@@ -41,6 +51,14 @@
   .el-wrapper {
     width: 290px;
     margin: 30px auto;
+  }
+
+  @media (max-width: 300px){
+    .el-wrapper{
+      width: 250px;
+      margin: 30px auto;
+    }
+    
   }
 }
 

@@ -76,6 +76,3 @@ fila.addEventListener('mouseleave', () => {
 
 /*Finaliza Carrusel*/
 
-/*Start Botton*/
-
-/*Finish Botton*/

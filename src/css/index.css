@@ -2402,6 +2402,12 @@ a:hover, a:link, a:active {
   color: #8c8b8b;
   font-weight: 300;
 }
+@media (max-width: 480px) {
+  .textoCont h2 {
+    font-weight: 200;
+    font-size: 20px;
+  }
+}
 @media (max-width: 300px) {
   .textoCont h2 {
     font-weight: 200;
@@ -2415,6 +2421,11 @@ a:hover, a:link, a:active {
 
 .textoCont ul {
   color: #8c8b8b;
+}
+@media (max-width: 480px) {
+  .textoCont ul {
+    font-size: 14px;
+  }
 }
 @media (max-width: 300px) {
   .textoCont ul {
